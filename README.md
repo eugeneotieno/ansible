@@ -4,5 +4,5 @@
 
 ## Ping servers
 ```
-ansible all -u gene -m ping
+ansible all -m ping
 ```
