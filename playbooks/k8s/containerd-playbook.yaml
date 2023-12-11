@@ -1,0 +1,14 @@
+---
+
+- hosts: all
+  become: true
+
+  tasks:
+  - name: Install containerd.io by running containerd script
+    ansible.builtin.script: ./containerd.sh
+
+  - name: Enable and start containerd.io
+    ansible.builtin.service:
+      name: containerd
+      enabled: yes
+      state: started

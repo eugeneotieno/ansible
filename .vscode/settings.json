@@ -1,0 +1,4 @@
+{
+    "ansible.python.interpreterPath": "/Users/eugene/Desktop/Projects/ansible/venv/bin/python",
+    "ansible.executionEnvironment.enabled": true,
+}
