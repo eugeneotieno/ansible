@@ -1,0 +1,8 @@
+---
+
+- hosts: all
+  become: true
+
+  tasks:
+  - name: Install kubeadm, kubelet, kubectl by running kubes script
+    ansible.builtin.script: ./kubes.sh
