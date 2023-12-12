@@ -1,0 +1,9 @@
+- hosts: all
+  become: true
+
+  tasks:
+  - name: Install containerd.io by running containerd script
+    ansible.builtin.script: ./containerd.sh
+
+  - name: Install kubeadm, kubelet, kubectl by running kubes script
+    ansible.builtin.script: ./kubes.sh
